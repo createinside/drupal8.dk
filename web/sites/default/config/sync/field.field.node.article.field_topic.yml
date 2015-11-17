@@ -1,26 +1,26 @@
-uuid: 9f2d6ed5-b2e4-487a-8b2b-435068f3a512
+uuid: 5f8f49bf-9d88-459b-8e01-1d61f2ad893b
 langcode: da
 status: true
 dependencies:
   config:
-    - field.storage.node.field_tags
+    - field.storage.node.field_topic
     - node.type.article
-    - taxonomy.vocabulary.tags
-id: node.article.field_tags
-field_name: field_tags
+    - taxonomy.vocabulary.topics
+id: node.article.field_topic
+field_name: field_topic
 entity_type: node
 bundle: article
-label: Tags
+label: Emne
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      tags: tags
+      topics: topics
     sort:
       field: _none
     auto_create: true

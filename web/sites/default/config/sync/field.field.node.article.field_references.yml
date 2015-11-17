@@ -1,0 +1,23 @@
+uuid: a9b2440d-8b90-46b6-813b-595dda038bf2
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_references
+    - node.type.article
+  module:
+    - link
+id: node.article.field_references
+field_name: field_references
+entity_type: node
+bundle: article
+label: Referencer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

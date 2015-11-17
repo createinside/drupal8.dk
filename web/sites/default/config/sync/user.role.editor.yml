@@ -32,3 +32,8 @@ permissions:
   - 'edit own page content'
   - 'revert page revisions'
   - 'view page revisions'
+  - 'administer taxonomy'
+  - 'delete terms in topics'
+  - 'edit terms in topics'
+  - 'delete terms in tags'
+  - 'edit terms in tags'
