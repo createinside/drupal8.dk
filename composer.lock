@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "eb75277c5f0edf9c4ab513d07343b922",
-    "content-hash": "3f4d8f23fad6dd1d3f82e6ee7586f0b8",
+    "hash": "05de78528c9f66a1280ae695eb25272e",
+    "content-hash": "2ed80ab0547594a4f4d7fe182da82644",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -734,7 +734,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/54cceac5ceee9b7d57e49fd17ca9783a2e05c66a",
+                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/4193ea902665d806dacb3e2b19e16e1853472bf0",
                 "reference": "3b2ad0162396979a95819849aa4301dcbc8a5f12",
                 "shasum": ""
             },
@@ -1041,6 +1041,44 @@
             "time": "2015-11-11 13:40:13"
         },
         {
+            "name": "drupal/field_group",
+            "version": "8.1.0-rc3",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/field_group",
+                "reference": "e62de786a4fb7a3b6d91d48fe3516acbfd92c291"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/field_group-8.x-1.0-rc3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/field": "8.*"
+            },
+            "replace": {
+                "drupal/field_group_migrate": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/field_group_migrate"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides the ability to group your fields on both form and display.",
+            "homepage": "https://www.drupal.org/project/field_group",
+            "time": "2015-11-12 21:35:24"
+        },
+        {
             "name": "drush/drush",
             "version": "dev-master",
             "source": {
@@ -1050,7 +1088,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/87de819dc26c49c90abb45b30d01fa1659459284",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/1d9f394682ac3f9e384711cc4cb1ca940a45d81a",
                 "reference": "ed1c755679297b63f292a3b553dfcc9001836030",
                 "shasum": ""
             },
