@@ -9,3 +9,4 @@ is_admin: false
 permissions:
   0: 'access content'
   7: 'search content'
+  8: 'view disqus comments'

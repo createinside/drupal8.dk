@@ -1,7 +1,13 @@
 uuid: 5e4f2a65-d377-457e-9b09-9a3f341f2150
 langcode: da
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
 name: Artikel
 type: article
 description: 'Brug <em>artikler</em> til tidsfølsomt indhold som nyheder, pressemeddelelser eller blogindlæg.'
