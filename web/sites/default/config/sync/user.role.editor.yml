@@ -6,4 +6,7 @@ id: editor
 label: Redaktør
 weight: 3
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access administration pages'
+  - 'view the administration theme'
+  - 'access toolbar'
