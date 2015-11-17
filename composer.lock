@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7efad81cd939e51cbe507b1175bf2ce8",
-    "content-hash": "c625e4a3a7a59bf1cc7b06811c8ef46e",
+    "hash": "eb75277c5f0edf9c4ab513d07343b922",
+    "content-hash": "3f4d8f23fad6dd1d3f82e6ee7586f0b8",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -661,6 +661,36 @@
             "time": "2014-09-09 13:34:57"
         },
         {
+            "name": "drexarj/disqus-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drexarj/disqus-php.git",
+                "reference": "67b735ac012443be7523b7d609edbcbc7e8e67eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drexarj/disqus-php/zipball/67b735ac012443be7523b7d609edbcbc7e8e67eb",
+                "reference": "67b735ac012443be7523b7d609edbcbc7e8e67eb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "project",
+            "autoload": {
+                "classmap": {
+                    "": "disqusapi/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "The official PHP client library for disqus, with added composer.json.",
+            "time": "2013-11-07 10:47:07"
+        },
+        {
             "name": "drupal/admin_toolbar",
             "version": "8.1.10",
             "source": {
@@ -987,6 +1017,30 @@
             "time": "2015-11-16 23:48:13"
         },
         {
+            "name": "drupal/disqus",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/disqus",
+                "reference": "16f33d1a83263eca5aeb2f0df046985eb1cec12e"
+            },
+            "require": {
+                "drexarj/disqus-php": "dev-master",
+                "drupal/core": "8.*",
+                "drupal/field": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Uses the Disqus web service to enhance comments.",
+            "homepage": "https://www.drupal.org/project/disqus",
+            "time": "2015-11-11 13:40:13"
+        },
+        {
             "name": "drush/drush",
             "version": "dev-master",
             "source": {
@@ -996,7 +1050,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/880d6d40cebf832d5d987e268602e228ec97c76d",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/87de819dc26c49c90abb45b30d01fa1659459284",
                 "reference": "ed1c755679297b63f292a3b553dfcc9001836030",
                 "shasum": ""
             },
