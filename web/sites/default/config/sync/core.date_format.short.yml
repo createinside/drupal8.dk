@@ -1,0 +1,8 @@
+uuid: 262637b7-4cec-434d-b600-ff6604efbcba
+langcode: da
+status: true
+dependencies: {  }
+id: short
+label: 'Default short date'
+locked: false
+pattern: 'm/d/Y - H:i'

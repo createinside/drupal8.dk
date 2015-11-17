@@ -1,0 +1,11 @@
+uuid: 6a83db2c-69f1-4853-9e00-c437adc248b9
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node_unpublish_action
+label: 'Afpubliceer indhold'
+type: node
+plugin: node_unpublish_action
+configuration: {  }

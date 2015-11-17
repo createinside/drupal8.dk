@@ -1,0 +1,11 @@
+uuid: da9db555-5752-4d94-8a04-4b104bd6f9a3
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node_make_unsticky_action
+label: 'Fjern klæbrighed'
+type: node
+plugin: node_make_unsticky_action
+configuration: {  }

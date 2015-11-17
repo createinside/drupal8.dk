@@ -1,0 +1,10 @@
+uuid: d93eeb8e-9f04-40da-b11a-26ac7996406b
+langcode: da
+status: true
+dependencies: {  }
+id: feedback
+label: 'Website feedback'
+recipients:
+  - christian@createinside.com
+reply: ''
+weight: 0

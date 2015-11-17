@@ -1,0 +1,9 @@
+uuid: 2868bbff-a58b-427c-9a00-f2fb9b39c388
+langcode: da
+status: true
+dependencies: {  }
+id: personal
+label: 'Personlig kontaktformular'
+recipients: {  }
+reply: ''
+weight: 0

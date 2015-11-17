@@ -1,0 +1,11 @@
+uuid: 5517ea30-110e-496e-8700-ac8a4dadf197
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node_unpromote_action
+label: 'Fjern indhold fra forsiden'
+type: node
+plugin: node_unpromote_action
+configuration: {  }

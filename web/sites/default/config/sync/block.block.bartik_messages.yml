@@ -1,0 +1,20 @@
+uuid: 6db1ed04-7f85-4aea-9900-fdac23de4bb2
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+id: bartik_messages
+theme: bartik
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Statusmeddelelser
+  provider: system
+  label_display: '0'
+visibility: {  }

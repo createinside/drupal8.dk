@@ -1,0 +1,11 @@
+uuid: d7a3f548-66e9-4e85-b708-8c2de8e7b55e
+langcode: da
+status: true
+dependencies:
+  module:
+    - comment
+id: comment_publish_action
+label: 'Udgiv kommentar'
+type: comment
+plugin: comment_publish_action
+configuration: {  }

@@ -1,0 +1,20 @@
+uuid: 34cb4af2-b805-40f6-9e00-c41308f3056c
+langcode: da
+status: true
+dependencies:
+  theme:
+    - seven
+id: seven_primary_local_tasks
+theme: seven
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primære faneblade'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

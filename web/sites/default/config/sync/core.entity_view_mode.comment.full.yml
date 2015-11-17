@@ -1,0 +1,10 @@
+uuid: 16a3805a-88d2-4a8e-ac10-16ac33ee3e7a
+langcode: da
+status: false
+dependencies:
+  module:
+    - comment
+id: comment.full
+label: 'Fuld kommentar'
+targetEntityType: comment
+cache: true

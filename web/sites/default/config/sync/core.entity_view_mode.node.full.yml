@@ -1,0 +1,10 @@
+uuid: 21705344-c90e-435a-b900-b5b8ff6c20e2
+langcode: da
+status: false
+dependencies:
+  module:
+    - node
+id: node.full
+label: 'Fuldt indhold'
+targetEntityType: node
+cache: true

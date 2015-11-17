@@ -1,0 +1,10 @@
+uuid: 70382270-ab35-4892-9900-bca436efb7cc
+langcode: da
+status: false
+dependencies:
+  module:
+    - node
+id: node.search_result
+label: 'Søgeresultat med fremhævelse af input'
+targetEntityType: node
+cache: true

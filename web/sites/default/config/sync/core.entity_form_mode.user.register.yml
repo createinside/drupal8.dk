@@ -1,0 +1,10 @@
+uuid: 74e877f6-8458-4c3d-9304-4b5c6bf17bcd
+langcode: da
+status: true
+dependencies:
+  module:
+    - user
+id: user.register
+label: 'Opret konto'
+targetEntityType: user
+cache: true

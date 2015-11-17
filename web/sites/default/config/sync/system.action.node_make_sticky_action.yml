@@ -1,0 +1,11 @@
+uuid: f6ada993-9bc5-4fd6-9a00-b84c1a4e0e78
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node_make_sticky_action
+label: 'Gør indhold klæbrigt'
+type: node
+plugin: node_make_sticky_action
+configuration: {  }

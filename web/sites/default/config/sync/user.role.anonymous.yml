@@ -1,0 +1,14 @@
+uuid: 22455030-1968-4833-b906-6bca0c5ae86d
+langcode: da
+status: true
+dependencies: {  }
+id: anonymous
+label: 'Anonym bruger'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format restricted_html'
+  - 'access comments'
+  - 'access site-wide contact form'
+  - 'search content'
