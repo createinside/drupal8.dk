@@ -1,0 +1,63 @@
+uuid: ad152bdf-4699-4e54-932b-4393035dcd2b
+langcode: da
+status: true
+dependencies:
+  config:
+    - filter.format.default_textformat
+  module:
+    - ckeditor
+format: default_textformat
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatering
+          items:
+            - Bold
+            - Italic
+            - Underline
+            - Strike
+            - Format
+            - Styles
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lister
+          items:
+            - BulletedList
+            - NumberedList
+            - Outdent
+            - Indent
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+        -
+          name: Justering
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+        -
+          name: Værktøjer
+          items:
+            - Source
+            - RemoveFormat
+  plugins:
+    stylescombo:
+      styles: ''
+image_upload:
+  status: true
+  scheme: public
+  directory: articles
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null
