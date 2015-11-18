@@ -23,30 +23,32 @@
 			> li {
 				display: block;
 				float: left;
-				margin: 0 0 0 5px;
+				margin-left: 5px;
 				padding: 0;
 				position: relative;
 				> a {
 					display: block;
 					line-height: 18px;
 					padding: 11px 20px;
+					text-decoration: none;
 					text-transform: uppercase;
 					color: $white;
-					background-color: $red;
-					@include font-patua-one;
+					background-color: $color-drupal-dark;
+					font-family: $font-family-display;
+					transition: $transition-background;
 					&:hover, &:focus {
-						background-color: $black;
+						background-color: $color-black;
 					}
 				}
 				&.menu-item--active-trail {
 					> a {
-						background-color: $black;
+						background-color: $color-black;
 					}
 				}
 
 				&:hover, &:focus{
 					> a {
-						background-color: $black;
+						background-color: $color-black;
 					}
 					ul.menu {
 						display: block;
@@ -56,13 +58,13 @@
 				ul.menu{
 					.menu-item--active-trail{
 						.is-active {
-							color: $vivid-red;
+							color: red; //$vivid-red;
 						}
 					}
 				}
 			}
-			.is-active {				
-					background-color: $black;				
+			.is-active {
+					background-color: $color-black;
 			}
 			.expanded,
 			.menu-item--expanded {
@@ -94,7 +96,8 @@
 					a {
 						background: none;
 						text-transform: none;
-						@include font-open-sanslight;
+						// @include font-open-sanslight;
+						font-family: $font-family-display;
 						&:hover, &:focus {
 							color: $vivid-red;
 						}
@@ -276,9 +279,9 @@
 /* cate menu */
 #secondary-menu {
 	background-color: $light-gray-2;
-	border-bottom: 1px solid $white;
-	box-shadow: 0 0 4px $grey;
-	-webkit-box-shadow: 0 0 4px $grey;
+	// border-bottom: 1px solid $white;
+	// box-shadow: 0 0 4px $grey;
+	// -webkit-box-shadow: 0 0 4px $grey;
 	position: relative;
 	z-index: 6;
 	.block-inner {
@@ -292,7 +295,7 @@
 		> li {
 			display: block;
 			float: left;
-			border-right: 1px solid $light-gray;
+			// border-right: 1px solid $light-gray;
 			padding: 0;
 			margin: 0;
 			position: relative;
@@ -301,16 +304,17 @@
 				padding: 15px 15px;
 				line-height: 20px;
 				text-transform: uppercase;
-				@include font-patua-one;
+				text-decoration: none;
+				font-family: $font-family-display;
 				color: $black;
 				&:hover, &:focus {
-					background-color: $black;
-					color: $white;
+					background-color: $color-black;
+					color: $color-white;
 				}
 			}
-			
+
 			&:first-child {
-				border-left: 1px solid $light-gray;
+				// border-left: 1px solid $light-gray;
 			}
 			&:hover, &:focus {
 				> a {
@@ -372,7 +376,8 @@
 				a {
 					background: none;
 					text-transform: none;
-					@include font-open-sanslight;
+					// @include font-open-sanslight;
+					font-family: $font-family-display;
 					padding: 8px 0;
 					color: $white;
 					&:hover, &:focus, &.is-active {

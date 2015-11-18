@@ -1,54 +1,6 @@
-
-body {
-  color: $dark;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  font-family: 'open_sanslight';
-  font-size: 14px;
-  background: url(../images/bg-body.jpg) repeat 0 0 #ededed;
-}
-
-html {
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-a {
-  color: $vivid-red;
-  @include effect;
-  &:hover, &:focus {
-    outline: none;
-    text-decoration: none;
-    color: $dark;
-  }
-}
-
-h1, h2, h3 {
-  margin: 0 0 20px;
-  @include font-patua-one;
-}
-
-h1 {
-  font-size: $fontsize-24;
-}
-
-h2 {
-  font-size: $fontsize-20;
-}
-
-h3 {
-  font-size: $fontsize-18;
-}
-
 .form-text {
   font-size: 0.929em;
   &:hover, &:focus {}
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 input{
@@ -82,9 +34,7 @@ label {
   font-weight: 100;
 }
 
-p {
-  margin-bottom: 20px;
-}
+
 
 iframe, video {
   max-width: 100%;
@@ -97,7 +47,7 @@ iframe, video {
       margin-bottom: 0;
     }
   }
-  
+
 }
 
 .field-label-inline{

@@ -1,0 +1,40 @@
+/* headline */
+.headline {
+	background-color: $black;
+	font-size: $fontsize-12;
+	color: $grey;
+	#block-realtime {
+		margin-bottom: 0;
+		padding: 10px 0;
+		float: left;
+	}
+	.block {
+		float: right;
+		margin-left: 10px;
+		//&:first-child {
+		//    float: left;
+		//    margin-left: 0;
+		//}
+		.field {
+			margin-bottom: 0;
+		}
+	}
+	.menu {
+		margin: 0;
+		padding: 0;
+		li {
+			border-right: 1px solid $dim-grey;
+			padding: 0;
+			float: left;
+			a {
+				display: block;
+				padding: 10px 15px;
+				color: $grey;
+				line-height: 18px;
+				&:hover, &:focus {
+					color: $vivid-red;
+				}
+			}
+		}
+	}
+}

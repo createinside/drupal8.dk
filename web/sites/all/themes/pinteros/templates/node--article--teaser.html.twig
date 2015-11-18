@@ -84,8 +84,8 @@
 	{{ content.field_image }}
 	</div>
 	{% endif %}
-	
-	{{ content.field_tags }}
+
+
     {{ title_prefix }}
     {% if not page %}
       <h2{{ title_attributes.addClass('node__title') }}>
@@ -109,4 +109,5 @@
     <div class="node__links">{{ content.links }}</div>
   {% endif %}
   {{ content.comment }}
+  {{ content.field_tags }}
 </article>

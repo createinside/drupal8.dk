@@ -152,7 +152,7 @@ ul li.leaf {
 		}
 	}
 	ul.links.inline {
-		border-top: none;   
+		border-top: none;
 		padding-top: 0 !important;
 		margin-bottom: 0 !important;
 		li {
@@ -474,7 +474,7 @@ ul.primary {
 		width: 25%;
 		margin-bottom: 20px;
 	}
-	.field{       
+	.field{
 		p{
 			&:last-child{
 				margin-bottom: 0;
@@ -594,7 +594,7 @@ tr.even, tr.odd {
 			height: 37px;
 		}
 	}
-	#edit-advanced{		
+	#edit-advanced{
 		label{
 			min-width: 190px;
 		}
@@ -772,6 +772,8 @@ html.js fieldset.collapsed {
 					text-transform: uppercase;
 					display: inline-block;
 					font-size: $fontsize-12;
+					text-decoration: none;
+					font-family: $font-family-display;
 					&:hover, &:focus{
 						background-color: $red;
 						color: $white;

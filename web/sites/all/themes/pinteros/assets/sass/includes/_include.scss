@@ -1,3 +1,5 @@
+$drupalBlue: #0678be;
+
 /* COLORS */
 $black: #000;
 $dark: #333;
@@ -13,8 +15,8 @@ $light-gray-3: #e8e8e8;
 $light-gray-4: #ccc;
 $light-gray-5: #f8f8f8;
 $light-gray-6: #eee;
-$vivid-red: #db1c2f;
-$red: #b41a25;
+$vivid-red: $drupalBlue; //#db1c2f;
+$red: darken($drupalBlue, 10%); //#b41a25;
 
 /* skins */
 $dark-blue: #08526d;
@@ -25,7 +27,7 @@ $light-blue-3: #cbd2d5;
 $light-blue-4: #718087;
 $light-blue-5: #616e73;
 $light-blue-6: #a8b5b9;
-$light-red: #e5251e;
+$light-red: lighten($drupalBlue, 10%); //#e5251e;
 
 /* blue */
 $blue: #1ca8dd;
@@ -51,8 +53,6 @@ $light-orange-8: #8e4e21;
 
 $pink: #b34664;
 
-
-
 /* font size */
 $fontsize-11: 0.785em;
 $fontsize-12: 0.875em;
@@ -62,4 +62,3 @@ $fontsize-18: 1.285em;
 $fontsize-20: 1.428em;
 $fontsize-24: 1.71em;
 $fontsize-40: 2.857em;
-

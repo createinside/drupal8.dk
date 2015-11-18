@@ -1,4 +1,10 @@
-@import "_include";
+// @import "_include";
+
+@mixin bp($width) {
+  @media only screen and (min-width: $width + 'px') {
+    @content;
+  }
+}
 
 @mixin font-patua-one {
     font-family: 'patua_oneregular';

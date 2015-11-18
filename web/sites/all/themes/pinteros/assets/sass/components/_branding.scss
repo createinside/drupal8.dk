@@ -1,0 +1,19 @@
+#block-pinteros-branding {
+  float: left;
+}
+
+h1.site-name {
+  font-size: rem(18px);
+  line-height: 35px;
+  margin-bottom: 0;
+  margin-left: 5px;
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

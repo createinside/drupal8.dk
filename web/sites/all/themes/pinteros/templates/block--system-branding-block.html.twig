@@ -22,9 +22,9 @@
   {% if site_name or site_slogan %}
     <div class="site-branding-text">
       {% if site_name %}
-        <strong class="site-name">
+        <h1 class="site-name">
           <a href="{{ url('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
-        </strong>
+        </h1>
       {% endif %}
       {% if site_slogan %}
         <div class="site-slogan">{{ site_slogan }}</div>

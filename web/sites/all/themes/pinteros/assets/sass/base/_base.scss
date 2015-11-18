@@ -1,0 +1,110 @@
+body {
+  @extend %font-smoothing;
+
+  background: $color-white;
+  color: $color-black;
+
+  font-family: $font-family-default;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-family-display;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: $fontsize-24;
+}
+
+h2 {
+  font-size: $fontsize-20;
+}
+
+h3 {
+  font-size: $fontsize-18;
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+em {
+  font-style: italic;
+
+  strong {
+    font-weight: bold;
+  }
+}
+
+
+/* Links
+   ==================== */
+
+a {
+  &:link {
+    color: $color-drupal;
+    text-decoration: underline;
+    transition: $transition-color;
+  }
+
+  &:visited {
+    color: $color-drupal-dark;
+  }
+
+  &:hover {
+    color: $color-complementary;
+    outline: none;
+  }
+
+  &:focus {
+    color: $color-complementary;
+    outline: none;
+  }
+}
+
+/* Paragraphs
+   ==================== */
+
+p {
+  margin-bottom: 1.2em;
+}
+
+
+/* Images
+   ==================== */
+
+img {
+ max-width: 100%;
+ height: auto;
+}
+
+
+/* Forms
+   ==================== */
+input {
+  font-family: $font-family-display;
+}
+
+label {
+  font-family: $font-family-display;
+}
+
+
+
+/* Pre
+   ==================== */
+
+pre {
+  background: #272822;
+  color: $color-white;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  padding: 20px;
+}

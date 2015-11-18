@@ -1,0 +1,22 @@
+.footer {
+  font-family: $font-family-display;
+	font-size: rem(16px);
+	color: $color-grey;
+	text-align: center;
+
+	.container {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		p {
+			margin-bottom: 0;
+		}
+		a {
+			&:hover, &:focus {
+				text-decoration: underline;
+			}
+		}
+	}
+	.field--name-body{
+		margin-bottom: 0;
+	}
+}

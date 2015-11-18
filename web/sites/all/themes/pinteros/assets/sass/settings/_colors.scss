@@ -1,0 +1,14 @@
+$color-black: lighten(#000000, 10%);
+
+$color-white: #ffffff;
+
+$color-grey: darken($color-white, 35%);
+$color-grey-dark: darken($color-grey, 10%);
+$color-grey-light: lighten($color-grey, 10%);
+$color-grey-lighter: lighten($color-grey, 20%);
+
+$color-drupal: #0678be;
+$color-drupal-dark: darken($color-drupal, 10%);
+$color-drupal-light: lighten($color-drupal, 10%);
+
+$color-complementary: #BE7106;

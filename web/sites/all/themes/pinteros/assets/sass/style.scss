@@ -1,12 +1,31 @@
-@import "../vendor/font-awesome/css/font-awesome.css";
-@import "../vendor/fonts/stylesheet.css";
 @import "includes/_include";
-@import "includes/_mixins";
 
-//
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/transitions";
+@import "settings/typography";
+
+@import "utilities/extends";
+@import "utilities/functions";
+@import "utilities/mixins";
+
+@import "base/reset";
+@import "base/base";
+
 @import "partials/_html";
 @import "partials/_base";
 @import "partials/_menu";
 @import "partials/_block";
 @import "partials/_page";
 @import "partials/_responsive";
+
+@import "components/articles";
+@import "components/branding";
+@import "components/footer";
+@import "components/frontpage";
+@import "components/headline";
+@import "components/maintenance";
+@import "components/search";
+@import "components/tags";
+@import "components/teasers";
+@import "components/title";
