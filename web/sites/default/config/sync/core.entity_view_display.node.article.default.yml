@@ -13,8 +13,6 @@ dependencies:
     - field.field.node.article.field_topic
     - node.type.article
   module:
-    - comment
-    - datetime
     - disqus
     - image
     - text
@@ -30,53 +28,25 @@ content:
     settings: {  }
     third_party_settings: {  }
     label: hidden
-  comment:
-    label: above
-    type: comment_default
-    weight: 3
-    settings:
-      pager_id: 0
-    third_party_settings: {  }
   field_comments:
-    weight: 7
-    label: above
+    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: disqus_comment
-  field_date:
-    weight: 5
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
   field_image:
     type: image
     weight: 0
+    label: hidden
     settings:
-      image_style: large
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
-    label: hidden
-  field_tags:
-    type: entity_reference_label
-    weight: 2
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  field_topic:
-    weight: 6
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-  links:
-    weight: 4
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  comment: true
+  field_date: true
   field_references: true
+  field_tags: true
+  field_topic: true
   langcode: true
+  links: true

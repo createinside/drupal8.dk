@@ -44,10 +44,6 @@ content:
       link: true
     third_party_settings: {  }
     label: hidden
-  links:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   comment: true
   field_comments: true
@@ -55,3 +51,4 @@ hidden:
   field_references: true
   field_topic: true
   langcode: true
+  links: true
