@@ -1,0 +1,18 @@
+uuid: 8dcf0249-021c-4023-8003-03df0027a70d
+langcode: da
+status: true
+dependencies:
+  theme:
+    - pinteros
+id: pinteros_local_actions
+theme: pinteros
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

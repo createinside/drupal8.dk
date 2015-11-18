@@ -1,0 +1,174 @@
+<div id="page">
+
+  {% if page.headline %}
+    <section id="headline" class="headline section">
+      <div class="container">
+        {{ page.headline }}
+      </div>
+    </section>
+  {% endif %}
+
+  <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
+    <div class="container clearfix">
+      {% if page.secondary_menu %}
+        <button type="button" class="secondary-menu-button navbar-toggle collapsed" data-toggle="collapse" data-target="#secondary-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      {% endif %}
+
+      {% if page.left_menu %}
+        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      {% endif %}
+
+      {% if logo %}
+        <a href="{{ front_page }}" title="{{ site_name }}" rel="home" id="logo">
+          <img  src="{{ logo }}" alt="{{ site_name }}" />
+        </a>
+      {% endif %}
+      {% if site_name or site_slogan %}
+        <div id="name-and-slogan"{% if hide_site_name and hide_site_slogan %} class="visually-hidden"{% endif %}>
+          {% if site_name %}
+            {% if title %}
+              <div id="site-name"{% if hide_site_name %} class="visually-hidden"{% endif %}>
+                <strong>
+                  <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home"><span>{{ site_name }}</span></a>
+                </strong>
+              </div>
+              {# Use h1 when the content title is empty #}
+            {% else %}
+              <h1 id="site-name"{% if hide_site_name %} class="visually-hidden" {% endif %}>
+                <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home"><span>{{ site_name }}</span></a>
+              </h1>
+            {% endif %}
+          {% endif %}
+          {% if site_slogan %}
+            <div id="site-slogan"{% if hide_site_slogan %} class="visually-hidden"{% endif %}>
+              {{ site_slogan }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <div class="region-header">
+        {{ page.header }}
+
+        {% if page.primary_menu %}
+          <a id="menu-toggle" class="navbar-toggle collapsed" href="#menu-toggle">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+        {% endif %}
+      </div>
+
+      {% if page.primary_menu %}
+        <nav class="collapse navbar-collapse width" id="main-menu-inner">
+          {{ page.primary_menu }}
+        </nav>
+      {% endif %}
+
+    </div>
+  </header>
+
+  {% if page.secondary_menu %}
+    <nav id="secondary-menu" class="secondary-menu section collapse navbar-collapse width">
+      <div class="container">
+        {{ page.secondary_menu }}
+      </div>
+    </nav>
+  {% endif %}
+
+  {% if page.title or page.featured or page.breadcrumb %}
+    <section id="main-title" class="main-title">
+      <div class="container">
+        {{ title_prefix }}
+        {% if page.title %}
+          
+            {{ page.title }}
+          
+        {% endif %}
+        {{ title_suffix }}
+
+        {% if page.featured %}
+          {{ page.featured }}
+        {% endif %}
+
+        {% if page.breadcrumb %}
+          <section id="breadcrumb" class="section">
+            {{ page.breadcrumb }}
+          </section>
+        {% endif %}
+      </div>
+    </section>
+  {% endif %}
+
+  {% if page.map %}
+    <section id="map" class="map section">
+      <div class="container-fluid">
+        {{ page.map }}
+      </div>
+    </section>
+  {% endif %}
+
+
+  <section id="main" class="main section clearfix">
+    <div class="container">
+      <div class="row row-offcanvas row-offcanvas-left">
+        {% if page.left_menu %}
+          <div id="left-menu" role="navigation" class="col-xs-6 col-sm-6 col-md-2 left-menu-offcanvas">
+            {{ page.left_menu }}
+          </div>
+        {% endif %}
+        <div class="col-sm-{{ page.left_menu ? 10 : 12 }}">
+          <div class="row">
+            <div id="content" class="content col-lg-{{ page.main_content_width }} col-md-{{ page.main_content_width }} col-sm-12 col-xs-12">
+                {% if page.highlighted %}
+                  <div id="highlighted">
+                    {{ page.highlighted }}
+                  </div>
+                {% endif %}
+
+                <a id="main-content" tabindex="-1"></a>
+                {% if tabs %}
+                  <nav class="tabs" role="navigation" aria-label="{{ 'Tabs'|t }}">
+                    {{ tabs }}
+                  </nav>
+                {% endif %}
+                {{ page.help }}
+                {% if action_links %}
+                  <ul class="action-links">{{ action_links }}</ul>
+                {% endif %}
+                {{ page.content }}
+            </div>
+            {% if page.sidebar_first %}
+              <aside id="sidebar-first" class="section sidebar sidebar-offcanvas col-lg-{{ page.sidebar_first_width }} col-md-{{ page.sidebar_first_width }} col-sm-12 col-xs-12" role="complementary">
+                {{ page.sidebar_first }}
+              </aside>
+            {% endif %}
+            {% if page.sidebar_second %}
+              <aside id="sidebar-second" class="section sidebar sidebar-offcanvas col-lg-{{ page.sidebar_first_width }} col-md-{{ page.sidebar_second_width }}" role="complementary">
+                {{ page.sidebar_second }}
+              </aside>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% if page.footer %}
+    <footer id="footer" class="section footer">
+      <div class="container">
+        {{ page.footer }}
+      </div>
+    </footer>
+  {% endif %}
+  <a href="#" class="btn-btt">Back to top</a>
+</div>

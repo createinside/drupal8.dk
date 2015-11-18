@@ -1,0 +1,59 @@
+<?php
+
+use Drupal\Component\Utility\Xss;
+use Drupal\Core\Template\Attribute;
+
+function pinteros_preprocess_html(&$variables) {
+  // Add information about the number of sidebars.
+  if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+    $variables['attributes']['class'][] = 'layout-two-sidebars';
+    $variables['page']['main_content_width'] = 6;    
+  }
+  elseif (!empty($variables['page']['sidebar_first'])) {
+    $variables['attributes']['class'][] = 'layout-one-sidebar';
+    $variables['attributes']['class'][] = 'layout-sidebar-first';
+    $variables['page']['main_content_width'] = 7; 
+	$variables['page']['sidebar_first_width'] = 5; 	
+  }
+  elseif (!empty($variables['page']['sidebar_second'])) {
+    $variables['attributes']['class'][] = 'layout-one-sidebar';
+    $variables['attributes']['class'][] = 'layout-sidebar-second';
+    $variables['page']['main_content_width'] = 7;
+	$variables['page']['sidebar_second_width'] = 5;
+  }
+  else {
+    $variables['attributes']['class'][] = 'layout-no-sidebars';
+    $variables['page']['main_content_width'] = 12;    
+  }
+}
+
+function pinteros_preprocess_node(&$variables) {
+	$node = $variables['node'];
+	//$teaser = $variables['teaser'];
+	if ($node->getType() == 'blog' || $node->getType() == 'article') {
+		//$tmp = $variables['content']['field_pinteros_size'][0]['#plain_text'];
+		$video_link = $variables['content']['field_video'][0]['#title'];
+		if (strpos($video_link, 'youtube')) {
+			$video_link = str_replace('watch?v=', 'embed/', $video_link);
+		} else if (strpos($video_link, 'vimeo')) { 
+			$tmpArr = explode("/", $video_link);
+			$video_link = $tmpArr[count($tmpArr) - 1];
+			$video_link = 'https://player.vimeo.com/video/' . $video_link;
+		} else {
+			$video_link = null;
+		}
+		$variables['video_link'] = $video_link;
+	}
+}
+
+function pinteros_preprocess_breadcrumb(&$variables) {
+	//$breadcrumb = $variables['breadcrumb'];
+	//$links = $variables['links'];
+	//foreach ($links as $key => $link) {
+		//print_r($key);
+		//print_r($link->getText()->render());
+		//print_r($link->getText());
+		//print_r($link->getUrl()->toString());
+	//}
+	//exit();
+}

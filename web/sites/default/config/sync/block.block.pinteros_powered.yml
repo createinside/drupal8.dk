@@ -1,0 +1,20 @@
+uuid: 90ac09e7-d01c-42c4-b300-bd5711ec1ad4
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pinteros
+id: pinteros_powered
+theme: pinteros
+region: headline
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Drives af Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

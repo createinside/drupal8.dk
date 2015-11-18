@@ -1,0 +1,20 @@
+uuid: 640dbc45-a1cc-4a06-8a05-5e13b3c42a74
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pinteros
+id: pinteros_messages
+theme: pinteros
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Statusmeddelelser
+  provider: system
+  label_display: '0'
+visibility: {  }

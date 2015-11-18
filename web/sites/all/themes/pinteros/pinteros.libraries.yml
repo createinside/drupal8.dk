@@ -1,0 +1,30 @@
+global-styling:
+  version: 8.0.0-rc1
+  css:
+    theme:
+      assets/vendor/bootstrap/css/bootstrap.css: {}
+      assets/vendor/font-awesome/css/font-awesome.css: {}
+      assets/css/menu-off-canvas.css: {}
+      assets/css/mobile-menu.css: {}
+      assets/css/style.css: {}
+  js:
+    assets/vendor/bootstrap/js/bootstrap.js: {}
+    assets/vendor/masonry/masonry.pkgd.min.js: {}
+    assets/js/jquery.cookie.js: {}
+    assets/js/jquery.smooth-scroll.js: {}
+    assets/js/mobile_menu.js: {}
+    assets/js/weebpal.js: {}
+    assets/js/pinteros.js: {}
+    assets/vendor/respond/html5shiv.min.js: {}
+    assets/vendor/respond/respond.min.js: {}
+corescript:
+    version: VERSION
+    js:
+        assets/js/fix_script.js: {}
+    dependencies:
+      - core/matchmedia
+      - core/jquery
+      - core/drupal
+      - core/jquery.once
+      - core/jquery.intrinsic
+

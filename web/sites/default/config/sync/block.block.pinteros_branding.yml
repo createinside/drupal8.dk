@@ -1,0 +1,23 @@
+uuid: 7a5b35b7-4c32-4b31-9e00-fa17f0e0c0c4
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pinteros
+id: pinteros_branding
+theme: pinteros
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

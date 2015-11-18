@@ -1,0 +1,20 @@
+uuid: 629bd35d-2097-4e01-a300-f4c7fd42f4e9
+langcode: da
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - pinteros
+id: pinteros_search
+theme: pinteros
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Søg
+  provider: search
+  label_display: visible
+visibility: {  }

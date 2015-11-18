@@ -1,0 +1,20 @@
+uuid: 5dfeeb9f-94da-43b5-9b00-ead857d59a74
+langcode: da
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - pinteros
+id: pinteros_help
+theme: pinteros
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Hjælp
+  provider: help
+  label_display: '0'
+visibility: {  }

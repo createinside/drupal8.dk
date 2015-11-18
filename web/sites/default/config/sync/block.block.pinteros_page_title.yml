@@ -1,0 +1,18 @@
+uuid: bd333f64-a20f-4a8a-ad00-0cd278192bbd
+langcode: da
+status: true
+dependencies:
+  theme:
+    - pinteros
+id: pinteros_page_title
+theme: pinteros
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Sidetitel
+  provider: core
+  label_display: '0'
+visibility: {  }

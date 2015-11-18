@@ -1,0 +1,102 @@
+@import "_include";
+
+@mixin font-patua-one {
+    font-family: 'patua_oneregular';
+}
+
+@mixin font-open-sanslight {
+    font: {
+        family: 'open_sanslight';
+    };
+}
+
+@mixin font-open-sansregular {
+    font: {
+        family: 'open_sansregular';
+    };
+}
+
+@mixin font-open-sansbold {
+    font: {
+        family: 'open_sansbold';
+    };
+}
+
+@mixin effect {
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+
+@mixin border-radius-50 {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+@mixin text-shadow {
+    -webkit-text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
+    -moz-text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+@mixin arrow-top {
+    &:after {
+        height: 0;
+        border-bottom: 6px solid $dark-grey;
+        border-left: 5px solid rgba(0, 0, 0, 0);
+        border-right: 5px solid rgba(0, 0, 0, 0);
+        content: "";
+        left: 35px;
+        position: absolute;
+        top: -6px;
+        width: 0;
+    }
+}
+
+@mixin arrow-bottom {
+    &:after {
+        height: 0;
+        border-top: 5px solid $cyan;
+        border-left: 5px solid rgba(0, 0, 0, 0);
+        border-right: 5px solid rgba(0, 0, 0, 0);
+        content: "";
+        left: 50%;
+        margin-left: -5px;
+        position: absolute;
+        width: 0;
+    }
+}
+
+@mixin fontawesome {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin block-type {
+    background-color: $white;
+    padding: 20px;
+    box-shadow: 0 0 8px -7px $grey;
+    -webkit-box-shadow: 0 0 8px -7px $grey;
+}
+
+/* Transition */
+@mixin transition($time) {
+    transition: all #{$time}s ease-in-out;
+    -webkit-transition: all #{$time}s ease-in-out;
+    -moz-transition: all #{$time}s ease-in-out;
+    -o-transition: all #{$time}s ease-in-out;
+}
+
+@mixin clearfix {
+    &:before, &:after {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}

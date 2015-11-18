@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Bartik theme.
+
+pinteros.settings:
+  type: theme_settings
+  label: 'Pinteros settings'
