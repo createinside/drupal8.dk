@@ -1,0 +1,24 @@
+uuid: c9301bb1-f4ec-49f0-a009-9ef99cddd6d7
+langcode: da
+status: true
+dependencies:
+  config:
+    - system.menu.secondary-menu
+  module:
+    - system
+  theme:
+    - pinteros
+id: secondarymenu
+theme: pinteros
+region: secondary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:secondary-menu'
+settings:
+  id: 'system_menu_block:secondary-menu'
+  label: 'Secondary menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

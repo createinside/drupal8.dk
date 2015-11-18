@@ -1,6 +1,6 @@
 uuid: 32adeeb0-f03f-4057-ac00-fbd19691d4ce
 langcode: da
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -8,8 +8,8 @@ dependencies:
     - pinteros
 id: pinteros_breadcrumbs
 theme: pinteros
-region: breadcrumb
-weight: 0
+region: '-1'
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:

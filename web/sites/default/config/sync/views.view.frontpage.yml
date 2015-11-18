@@ -287,7 +287,7 @@ display:
       tags: {  }
   page_1:
     display_options:
-      path: node
+      path: artikler
       display_extenders: {  }
     display_plugin: page
     display_title: Side

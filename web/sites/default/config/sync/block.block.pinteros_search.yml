@@ -8,8 +8,8 @@ dependencies:
     - pinteros
 id: pinteros_search
 theme: pinteros
-region: sidebar_first
-weight: -1
+region: header
+weight: -6
 provider: null
 plugin: search_form_block
 settings:

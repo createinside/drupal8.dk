@@ -1,0 +1,25 @@
+uuid: 6728f6f7-6557-4c35-a902-2ce81141698c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:675904df-984b-4a80-8632-504d60c5f126'
+  module:
+    - block_content
+  theme:
+    - pinteros
+id: copyright
+theme: pinteros
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:675904df-984b-4a80-8632-504d60c5f126'
+settings:
+  id: 'block_content:675904df-984b-4a80-8632-504d60c5f126'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

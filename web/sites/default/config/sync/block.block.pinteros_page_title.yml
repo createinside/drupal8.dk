@@ -2,12 +2,14 @@ uuid: bd333f64-a20f-4a8a-ad00-0cd278192bbd
 langcode: da
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - pinteros
 id: pinteros_page_title
 theme: pinteros
-region: content
-weight: -50
+region: title
+weight: -6
 provider: null
 plugin: page_title_block
 settings:
@@ -15,4 +17,9 @@ settings:
   label: Sidetitel
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

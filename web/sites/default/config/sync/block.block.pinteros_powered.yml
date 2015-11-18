@@ -1,6 +1,6 @@
 uuid: 90ac09e7-d01c-42c4-b300-bd5711ec1ad4
 langcode: da
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -8,8 +8,8 @@ dependencies:
     - pinteros
 id: pinteros_powered
 theme: pinteros
-region: headline
-weight: 10
+region: '-1'
+weight: -6
 provider: null
 plugin: system_powered_by_block
 settings:

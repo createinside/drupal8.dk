@@ -1,6 +1,6 @@
 uuid: 590eba6e-ec1e-47d8-9d4e-787dbbb00a3b
 langcode: da
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -10,8 +10,8 @@ dependencies:
     - pinteros
 id: pinteros_tools
 theme: pinteros
-region: sidebar_first
-weight: 0
+region: '-1'
+weight: -4
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

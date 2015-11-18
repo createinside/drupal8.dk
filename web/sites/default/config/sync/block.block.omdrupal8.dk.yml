@@ -1,0 +1,31 @@
+uuid: cd5e70e7-e745-4aea-8722-347b7dab19f0
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fd41883a-d75e-4d65-ae13-193608f24b5b'
+  module:
+    - block_content
+    - system
+  theme:
+    - pinteros
+id: omdrupal8.dk
+theme: pinteros
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'block_content:fd41883a-d75e-4d65-ae13-193608f24b5b'
+settings:
+  id: 'block_content:fd41883a-d75e-4d65-ae13-193608f24b5b'
+  label: 'Om Drupal8.dk'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/artikler/*/*"
+    negate: true
+    context_mapping: {  }

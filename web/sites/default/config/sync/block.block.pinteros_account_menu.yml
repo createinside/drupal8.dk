@@ -10,8 +10,8 @@ dependencies:
     - pinteros
 id: pinteros_account_menu
 theme: pinteros
-region: secondary_menu
-weight: 0
+region: headline
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:

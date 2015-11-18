@@ -1,6 +1,6 @@
 uuid: a25de4bc-14f1-41fa-a302-2ed3b4113f58
 langcode: da
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -10,8 +10,8 @@ dependencies:
     - pinteros
 id: pinteros_footer
 theme: pinteros
-region: headline
-weight: 0
+region: '-1'
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
