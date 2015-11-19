@@ -78,6 +78,25 @@ p {
 }
 
 
+/* Lists
+   ==================== */
+
+ul,
+ol {
+  .field--name-body & {
+    margin-bottom: 1.2em;
+  }
+}
+
+ul li {
+  .field--name-body & {
+    list-style: disc;
+    margin-left: 20px;
+  }
+}
+
+
+
 /* Images
    ==================== */
 
@@ -99,12 +118,24 @@ label {
 
 
 
-/* Pre
+/* Pre & Code
    ==================== */
 
-pre {
-  background: #272822;
+pre,
+code {
+  background: $color-code;
+  border-radius: 5px;
   color: $color-white;
   font-family: Consolas, Monaco, 'Andale Mono', monospace;
+}
+
+pre {
   padding: 20px;
+  margin-bottom: 1.2em;
+}
+
+code {
+  display: inline-block;
+  font-size: 0.9em;
+  padding: 0 5px;
 }

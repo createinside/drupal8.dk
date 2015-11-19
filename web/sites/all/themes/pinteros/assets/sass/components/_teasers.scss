@@ -4,16 +4,3 @@
 
   }
 }
-
-
-.node--view-mode-teaser {
-	border-top: 4px solid $color-drupal;
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
-	transition: $transition-all;
-
-	&:hover {
-		border-color: $color-complementary;
-		box-shadow: 0 0 10px -4px #999999;
-	}
-}
