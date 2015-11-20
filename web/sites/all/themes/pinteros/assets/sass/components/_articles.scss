@@ -1,3 +1,24 @@
+#page {
+
+  &.node--type-article {
+
+    #main-title {
+
+      .container {
+        border-bottom: 1px solid $color-grey;
+        max-width: 780px;
+        padding-top: 60px;
+      }
+    }
+
+
+    #block-pinteros-local-tasks {
+      max-width: 740px;
+      margin: 0 auto;
+    }
+  }
+}
+
 .node--type-article {
 
   &.node--view-mode-teaser {
@@ -18,6 +39,7 @@
     max-width: 780px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 0;
 
     @include bp(1200) {
 
@@ -49,4 +71,59 @@
     }
   }
 
+}
+
+.article-meta {
+  font-family: $font-family-display;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.article-author {
+  @extend %clearfix;
+
+  border-top: 1px solid $color-grey;
+  border-bottom: 1px solid $color-grey;
+  font-family: $font-family-display;
+  margin-bottom: 60px;
+  padding: 20px 0;
+
+  @include bp(800) {
+    margin-left: -50px;
+    margin-right: -50px;
+    padding: 20px 50px;
+  }
+
+  .field--type-image {
+    margin-bottom: 0;
+    float: left;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+
+  .field--name-field-user-name {
+    padding-top: 20px;
+    font-weight: bold;
+  }
+
+  .field--name-field-user-description {
+    color: $color-grey;
+    font-style: italic;
+  }
+}
+
+  .article-author-info {
+
+    h3 {
+      font-size: rem(12px);
+      text-transform: uppercase;
+    }
+  }
+
+.field--name-field-date {
+  color: $color-grey;
+  display: inline-block;
 }

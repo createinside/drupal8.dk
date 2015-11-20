@@ -90,19 +90,22 @@
 	{% else %}
 		{{ content.field_image }}
 	{% endif %}
-	
-	{% if display_submitted %}
-	  <div class="node__meta">
-		{{ author_picture }}
-		<span{{ author_attributes }}>
-		  {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-		</span>
-		{{ metadata }}
-	  </div>
-	{% endif %}
-	
-	{{ content|without('field_video', 'field_image', 'comment', 'links') }}
+
+  <div class="article-meta">
+    {{ content.field_date }} // Af: {{ author_name }}
   </div>
+
+	 {{ content|without('field_comments', 'field_date', 'field_video', 'field_image', 'comment', 'links') }}
+  </div>
+
+  <div class="article-author">
+    {{ author_picture }}
+  </div>
+
+  <div class="article-comments">
+    {{ content.field_comments }}
+  </div>
+
   {% if content.links %}
     <div class="node__links">{{ content.links }}</div>
   {% endif %}

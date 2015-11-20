@@ -5,6 +5,13 @@
 /* font size */
 @import url(../vendor/font-awesome/css/font-awesome.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic|Merriweather:400,700italic,700,400italic);
+/* line 2, ../sass/utilities/_extends.scss */
+.article-author:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /**
  * Unselectable
  */
@@ -4086,52 +4093,121 @@ html.js fieldset.collapsed {
     width: 179px;
   }
 }
-/* line 3, ../sass/components/_articles.scss */
+/* line 7, ../sass/components/_articles.scss */
+#page.node--type-article #main-title .container {
+  border-bottom: 1px solid #a6a6a6;
+  max-width: 780px;
+  padding-top: 60px;
+}
+/* line 15, ../sass/components/_articles.scss */
+#page.node--type-article #block-pinteros-local-tasks {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+/* line 24, ../sass/components/_articles.scss */
 .node--type-article.node--view-mode-teaser {
   border-top: 4px solid #0678be;
   transition: all 0.2s ease;
 }
-/* line 7, ../sass/components/_articles.scss */
+/* line 28, ../sass/components/_articles.scss */
 .node--type-article.node--view-mode-teaser:hover {
   border-color: #BE7106;
   box-shadow: 0 0 10px -4px #999999;
 }
-/* line 12, ../sass/components/_articles.scss */
+/* line 33, ../sass/components/_articles.scss */
 .node--type-article.node--view-mode-teaser .field--name-body {
   margin-bottom: 20px;
 }
-/* line 17, ../sass/components/_articles.scss */
+/* line 38, ../sass/components/_articles.scss */
 .node--type-article.node--view-mode-full {
   max-width: 780px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 0;
 }
-/* line 26, ../sass/components/_articles.scss */
+/* line 48, ../sass/components/_articles.scss */
 .node--type-article.node--view-mode-full .field--name-body {
   margin-bottom: 60px;
 }
-/* line 29, ../sass/components/_articles.scss */
+/* line 51, ../sass/components/_articles.scss */
 .node--type-article.node--view-mode-full .field--name-body p img {
   display: block;
   margin: 0 auto;
   padding-bottom: 1em;
   padding-top: 1em;
 }
-/* line 37, ../sass/components/_articles.scss */
+/* line 59, ../sass/components/_articles.scss */
 .node--type-article.node--view-mode-full h2 {
   margin-top: 1.8em;
 }
-/* line 41, ../sass/components/_articles.scss */
+/* line 63, ../sass/components/_articles.scss */
 .node--type-article.node--view-mode-full pre {
   margin-bottom: 2.2em;
   margin-top: 2.2em;
 }
 @media only screen and (min-width: 800px) {
-  /* line 41, ../sass/components/_articles.scss */
+  /* line 63, ../sass/components/_articles.scss */
   .node--type-article.node--view-mode-full pre {
     margin-left: -50px;
     margin-right: -50px;
   }
+}
+
+/* line 76, ../sass/components/_articles.scss */
+.article-meta {
+  font-family: Roboto, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+/* line 82, ../sass/components/_articles.scss */
+.article-author {
+  border-top: 1px solid #a6a6a6;
+  border-bottom: 1px solid #a6a6a6;
+  font-family: Roboto, Helvetica, sans-serif;
+  margin-bottom: 60px;
+  padding: 20px 0;
+}
+@media only screen and (min-width: 800px) {
+  /* line 82, ../sass/components/_articles.scss */
+  .article-author {
+    margin-left: -50px;
+    margin-right: -50px;
+    padding: 20px 50px;
+  }
+}
+/* line 97, ../sass/components/_articles.scss */
+.article-author .field--type-image {
+  margin-bottom: 0;
+  float: left;
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+/* line 107, ../sass/components/_articles.scss */
+.article-author .field--name-field-user-name {
+  padding-top: 20px;
+  font-weight: bold;
+}
+/* line 112, ../sass/components/_articles.scss */
+.article-author .field--name-field-user-description {
+  color: #a6a6a6;
+  font-style: italic;
+}
+
+/* line 120, ../sass/components/_articles.scss */
+.article-author-info h3 {
+  font-size: 0.85714rem;
+  text-transform: uppercase;
+}
+
+/* line 126, ../sass/components/_articles.scss */
+.field--name-field-date {
+  color: #a6a6a6;
+  display: inline-block;
 }
 
 /* line 1, ../sass/components/_branding.scss */
@@ -4333,10 +4409,6 @@ h1.site-name a:hover {
 }
 
 /* page title */
-/* line 2, ../sass/components/_title.scss */
-.main-title {
-  background: #d9d9d9;
-}
 /* line 4, ../sass/components/_title.scss */
 .main-title .container {
   padding-top: 20px;

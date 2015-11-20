@@ -1,4 +1,9 @@
-<div id="page">
+{%
+  set classes = [
+    'node--type-' ~ node.bundle|clean_class
+  ]
+%}
+<div id="page"{{ attributes.addClass(classes) }}>
 
   {% if page.headline %}
     <section id="headline" class="headline section">
@@ -90,9 +95,9 @@
       <div class="container">
         {{ title_prefix }}
         {% if page.title %}
-          
+
             {{ page.title }}
-          
+
         {% endif %}
         {{ title_suffix }}
 
