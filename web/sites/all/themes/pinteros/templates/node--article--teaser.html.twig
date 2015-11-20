@@ -93,14 +93,7 @@
       </h2>
     {% endif %}
     {{ title_suffix }}
-    {% if display_submitted %}
-      <div class="node__meta">
-        <span{{ author_attributes }}>
-          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        </span>
-        {{ metadata }}
-      </div>
-    {% endif %}
+    
   </header>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     {{ content|without('field_pinteros_size', 'field_video', 'field_image', 'field_tags', 'comment', 'links') }}
