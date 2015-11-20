@@ -3,16 +3,24 @@ langcode: da
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_user_description
     - field.field.user.user.field_user_name
     - field.field.user.user.user_picture
   module:
     - image
+    - text
     - user
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_user_description:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
   field_user_name:
     weight: 1
     label: above

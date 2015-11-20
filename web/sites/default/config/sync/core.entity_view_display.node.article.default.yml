@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.article.field_topic
     - node.type.article
   module:
+    - datetime
     - disqus
     - image
     - text
@@ -34,6 +35,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: disqus_comment
+  field_date:
+    type: datetime_custom
+    weight: 3
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'j. F Y'
+    third_party_settings: {  }
   field_image:
     type: image
     weight: 0
@@ -44,7 +53,6 @@ content:
     third_party_settings: {  }
 hidden:
   comment: true
-  field_date: true
   field_references: true
   field_tags: true
   field_topic: true
