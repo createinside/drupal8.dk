@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "05de78528c9f66a1280ae695eb25272e",
-    "content-hash": "2ed80ab0547594a4f4d7fe182da82644",
+    "hash": "7baa3df6daeadb148103ffdb46659820",
+    "content-hash": "193f4cd3e2d427e56f640dee74d3cda8",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -734,7 +734,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/4193ea902665d806dacb3e2b19e16e1853472bf0",
+                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/deede35130438e4982af449ba8918bb9978012b4",
                 "reference": "3b2ad0162396979a95819849aa4301dcbc8a5f12",
                 "shasum": ""
             },
@@ -1079,6 +1079,28 @@
             "time": "2015-11-12 21:35:24"
         },
         {
+            "name": "drupal/google_analytics",
+            "version": "dev-8.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/google_analytics",
+                "reference": "739095c0e9b8a95719ec176d93e7f20c97b2fc25"
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-2.x": "8.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.",
+            "homepage": "https://www.drupal.org/project/google_analytics",
+            "time": "2015-11-18 00:22:13"
+        },
+        {
             "name": "drush/drush",
             "version": "dev-master",
             "source": {
@@ -1088,7 +1110,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/1d9f394682ac3f9e384711cc4cb1ca940a45d81a",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/a917e7230011bca68a40cebcf52a0cb67c61c633",
                 "reference": "ed1c755679297b63f292a3b553dfcc9001836030",
                 "shasum": ""
             },
