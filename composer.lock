@@ -734,7 +734,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/deede35130438e4982af449ba8918bb9978012b4",
+                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/5a3ccd0494980af7e68ae709190b7e9107e74dad",
                 "reference": "3b2ad0162396979a95819849aa4301dcbc8a5f12",
                 "shasum": ""
             },
@@ -810,16 +810,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.0.0",
+            "version": "8.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "a595eef13ba4625ff842a5986e838c41f6ff98ef"
+                "reference": "64bb292ced6c3f683b34da53bf1b6373b3bbacc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/a595eef13ba4625ff842a5986e838c41f6ff98ef",
-                "reference": "a595eef13ba4625ff842a5986e838c41f6ff98ef",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/64bb292ced6c3f683b34da53bf1b6373b3bbacc3",
+                "reference": "64bb292ced6c3f683b34da53bf1b6373b3bbacc3",
                 "shasum": ""
             },
             "require": {
@@ -971,7 +971,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2015-11-19 14:02:15"
+            "time": "2015-12-02 14:08:29"
         },
         {
             "name": "drupal/devel",
@@ -1110,7 +1110,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/a917e7230011bca68a40cebcf52a0cb67c61c633",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/c7e08f752d0a0139a0e002009d77f4eeb4cc816b",
                 "reference": "ed1c755679297b63f292a3b553dfcc9001836030",
                 "shasum": ""
             },
