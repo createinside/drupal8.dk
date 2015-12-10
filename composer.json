@@ -40,12 +40,17 @@
         "post-install-cmd": "sh ./scripts/composer/post-install.sh"
     },
     "extra": {
-        "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"]
+      "installer-paths": {
+          "web/core": ["type:drupal-core"],
+          "web/modules/contrib/{$name}": ["type:drupal-module"],
+          "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+          "web/themes/contrib/{$name}": ["type:drupal-theme"],
+          "drush/contrib/{$name}": ["type:drupal-drush"]
+      },
+      "patches": {
+        "drupal/admin_toolbar": {
+          "Fix path to chevron-right.svg": "https://www.drupal.org/files/issues/2552081-admin_toolbar-chevron-right.svg-not-found.patch"
         }
+      }
     }
 }
