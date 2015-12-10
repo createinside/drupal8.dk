@@ -24,7 +24,8 @@
         "drupal/devel": "8.*",
         "drupal/disqus": "8.*",
         "drupal/field_group": "8.*",
-        "drupal/google_analytics": "8.*"
+        "drupal/google_analytics": "8.*",
+        "cweagans/composer-patches": "^1.3"
     },
     "require-dev": {
         "behat/mink": "~1.6",
