@@ -736,15 +736,15 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "8.1.10",
+            "version": "8.1.11",
             "source": {
                 "type": "git",
                 "url": "http://git.drupal.org/project/admin_toolbar.git",
-                "reference": "ce0a2f844820473a1b0968abe1d6fb7c92611430"
+                "reference": "4ffa123d545305870741a8cd5ce554906135bfeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.10.zip",
+                "url": "http://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.11.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -763,13 +763,21 @@
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
-                "patches_applied": {
-                    "Fix path to chevron-right.svg": "https://www.drupal.org/files/issues/2552081-admin_toolbar-chevron-right.svg-not-found.patch"
-                }
+                "patches_applied": []
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mohamed Anis Taktak",
+                    "homepage": "https://www.drupal.org/u/matio89"
+                }
+            ],
             "description": "Admin Toolbar improve the default Drupal Toolbar,it lets the hover of sub menus.",
-            "homepage": "https://www.drupal.org/project/admin_toolbar"
+            "homepage": "http://drupal.org/project/admin_toolbar",
+            "time": "2015-12-11 08:22:06"
         },
         {
             "name": "drupal/console",
@@ -781,7 +789,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/e1bdd1e4e162e3eb57287c5c096158a2aa776aa1",
+                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/d1cca6585d3439b7622f104a1a8c1432b3f1af6c",
                 "reference": "e1bdd1e4e162e3eb57287c5c096158a2aa776aa1",
                 "shasum": ""
             },
@@ -1168,7 +1176,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/d9ee45e7f420075fb96945ffcdf60637f5c16355",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/35790ce9d8be3f7039c12446cba2f1db76d284f7",
                 "reference": "d9ee45e7f420075fb96945ffcdf60637f5c16355",
                 "shasum": ""
             },
