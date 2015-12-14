@@ -48,9 +48,6 @@
           "drush/contrib/{$name}": ["type:drupal-drush"]
       },
       "patches": {
-        "drupal/admin_toolbar": {
-          "Fix path to chevron-right.svg": "https://www.drupal.org/files/issues/2552081-admin_toolbar-chevron-right.svg-not-found.patch"
-        }
       }
     }
 }
